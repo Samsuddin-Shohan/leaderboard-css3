@@ -6,6 +6,8 @@ body {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   background-color: white;
@@ -70,4 +72,40 @@ hr {
 .thumbnail img {
   width: 177px;
   height: 117px;
+}
+/* Latest courses */
+.courses-banner {
+  padding: 13px 30px 33px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.course {
+  height: 270px;
+  width: 253px;
+}
+.course-thumbnail img {
+  width: 224px;
+  height: 104px;
+}
+.course-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-author {
+  font-size: 15px;
+  color: #ed6b4f;
+}
+.fa-star.fulfilled {
+  color: #ffc014;
+}
+.fa-star.emptied {
+  color: #aeaeae;
+}
+.course-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
